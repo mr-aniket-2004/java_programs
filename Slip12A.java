@@ -1,6 +1,5 @@
 import java.awt.*;
 import  java.awt.event.*;
-import  java.awt.List;
 
 public class Slip12A extends Frame implements ActionListener {
     Label l1;
@@ -24,6 +23,20 @@ public class Slip12A extends Frame implements ActionListener {
         setFont(f);
 
     }
-    public void actionPerformed
+    public void actionPerformed(ActionEvent e)
+    {
+        int r;
+        lust.removeAll();
+        int num = Integer.parseInt(t1.getText());
+        for (int i =1 ; i<=10 ; i++)
+        {
+            r= num*i;
+            lust.add(num +"*"+i+"="+r);
+        }
+        t1.setText("");
+    }
+    public static void main(String[] args) {
+        Slip12A ob = new Slip12A();
+    }
     
 }
