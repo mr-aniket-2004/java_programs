@@ -19,7 +19,7 @@ public class Slip2A extends Frame implements  MouseListener , MouseMotionListene
 
     public  void mouseClicked(MouseEvent e)
     {
-        t1.setText("X : "+e.getX()+ "Y : "+e.getY());
+        t1.setText("X : "+e.getX()+ "\t"+"\tY : "+e.getY());
     }
     public  void mouseMoved(MouseEvent e)
     {
