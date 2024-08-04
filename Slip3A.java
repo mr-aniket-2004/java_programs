@@ -27,9 +27,7 @@ class cone extends shape
 }
 class cylinder extends shape
 {
-    float r;
-    float h;
-    float l;
+    float r,h;
     cylinder(float a,float b)
     {
         r=a;
