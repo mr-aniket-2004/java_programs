@@ -6,15 +6,15 @@ abstract class Shape {
 
 
 class circle extends Shape{
-    float redious =0.0f;
+    float radius =0.0f;
     circle(float r)
     {
-        redious = r;
+        radius = r;
         
     }
      public void area()
     {
-        float result = pi*redious*redious;
+        float result = pi*radius*radius;
         System.out.println("the area of cicle : "+result);
     }
 }
