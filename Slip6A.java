@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Slip5A  {
+public class Slip6A  {
     public static void main(String arg[])
     {
         Scanner sc = new Scanner(System.in);

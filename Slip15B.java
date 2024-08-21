@@ -21,7 +21,7 @@ public class Slip15B {
 
             if (ar[i].equals(f))
             {
-                System.out.println(i);
+                System.out.println(i+1);
                 temp++;
             }
         }
