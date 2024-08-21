@@ -4,6 +4,7 @@ public class Slip15B {
     public static void main(String arg[])
     {
         int temp=0;
+        System.out.print("enter the names : ");
         Scanner sc = new Scanner(System.in);
         String ar[]= new String[50];
         for(int i =0 ;i<3;i++){
