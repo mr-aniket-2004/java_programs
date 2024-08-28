@@ -52,7 +52,7 @@ public class Slip10A extends JFrame  {
         add(p3);
         add(p6);
         add(p4);
-
+        
         setLayout(new GridLayout(6,1));
        
 
