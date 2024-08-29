@@ -64,14 +64,18 @@ public class Slip10A extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent e)
     {
-        int p=0, r=0,n=0,a=0,iamot=0;
+        int n=0;
+        float p=0.0f, r=0.0f,a=0.0f,iamot=0.0f,ap=0.0f;
         if (e.getSource()==b1) {
-            p=Integer.parseInt(t1.getText());
-            r=Integer.parseInt(t2.getText());
+            p=Float.parseFloat(t1.getText());
+            r=Float.parseFloat(t2.getText());
             n=Integer.parseInt(t3.getText());
-            a=p*(1+((r/100)/n))*n*n;
-            t4.setText(""+a);
-            iamot =a-p;
+            a= p*((1+(r/n)/100));
+            for(int i =1;i<=n;i++){
+                ap = a*i;
+            }
+            t4.setText(""+ap);
+            iamot =ap-p;
             t5.setText(""+iamot);
 
         }
@@ -85,7 +89,7 @@ public class Slip10A extends JFrame implements ActionListener{
         }
         else if (e.getSource()==b3) {
             
-            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            System.exit(0);
         }
         
 

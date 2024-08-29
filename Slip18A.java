@@ -16,7 +16,7 @@ public class Slip18A
 	// }
 	public void area(int b, float l)
 	{
-		System.out.print("\n the area of circle : "+(l*b));
+		System.out.print("\n the area of rectangle : "+(l*b));
 	}
 	public static void main(String arg[])
 	{
@@ -34,11 +34,6 @@ public class Slip18A
 		System.out.print("\nenter the base of triangle- ");
 		int b= sc.nextInt();
 		ob.area(b,h);
-
-
-		System.out.print("\nenter the  side of sqaure- ");
-		float s= sc.nextFloat();
-		ob.area(s);
 
 
 		System.out.print("\nenter the length of rectangle- ");

@@ -1,12 +1,13 @@
 import java.util.*;
 
 public class Slip3B {
+    static int num =0;
     public static void main(String[] args) {
-        // static int temp = 0;
+       
         int result=0;
         Scanner sc = new Scanner(System.in);
         System.out.print("enter the number");
-        int num = sc.nextInt();
+         num = sc.nextInt();
         int original =num;
         while (num!=0) {
             int t = num%10;
