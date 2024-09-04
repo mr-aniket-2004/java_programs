@@ -65,18 +65,22 @@ public class Slip10A extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e)
     {
         int n=0;
-        float p=0.0f, r=0.0f,a=0.0f,iamot=0.0f,ap=0.0f;
+        double p, r,a,iamot;
         if (e.getSource()==b1) {
-            p=Float.parseFloat(t1.getText());
-            r=Float.parseFloat(t2.getText());
+            p=Double.parseDouble(t1.getText());
+            r=Double.parseDouble(t2.getText());
             n=Integer.parseInt(t3.getText());
-            a= p*((1+(r/n)/100));
-            for(int i =1;i<=n;i++){
-                ap = a*i;
-            }
-            t4.setText(""+ap);
-            iamot =ap-p;
-            t5.setText(""+iamot);
+            
+            a = p* (Math.pow((1+r/100),n));
+
+            iamot=a-p;
+
+           String temp = String.format("%.2f", iamot);
+           String temp1 = String.format("%.2f", a);
+           
+            t4.setText(""+temp1);
+            // iamot =ap-p;
+            t5.setText(""+temp);
 
         }
         else if(e.getSource()==b2)

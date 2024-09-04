@@ -1,1 +1,29 @@
-welcome to java 
+import java.io.*;
+
+public class SlipA {
+    public static void main(String[] args) throws Exception {
+        FileWriter fw = new FileWriter("SlipA.txt");
+        FileReader fr = new FileReader(args[]);
+        int data = ;
+        char ch ;
+        while (data != -) {
+            data = fr.read();
+            if (data==-) {
+                break;
+            }
+            else
+            {
+                ch = (char)data;
+                if (!(ch>=''&&ch<=''))
+                {
+                    fw.write(ch);
+                }
+                // System.out.print(""+(char)data);
+            }
+        }
+        fw.flush();
+        fw.close();
+        fr.close();
+
+    }
+}

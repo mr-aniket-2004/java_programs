@@ -14,13 +14,9 @@ public class Slip1A {
             else
             {
                 ch = (char)data;
-                if (ch>='0'&&ch<='9')
+                if (!(ch>='0'&&ch<='9'))
                 {
-                    fr.skip(ch);
-                }
-                else
-                {
-                    fw.write(""+ch);
+                    fw.write(ch);
                 }
                 // System.out.print(""+(char)data);
             }
