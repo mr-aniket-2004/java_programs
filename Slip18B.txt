@@ -1,0 +1,21 @@
+IMPORT JAVA.UTIL.*;
+PUBLIC CLASS sLIP*b {
+    PUBLIC STATIC VOID MAIN(sTRING ARG[])
+	{   
+        sCANNER SC = NEW sCANNER(sYSTEM.IN);
+        sYSTEM.OUT.PRINT("eNTER THE SIZE OF SERIE :");
+        INT A = SC.NEXTiNT();
+		INT N*=*;
+		INT N*=*;
+		INT SUM;
+		sYSTEM.OUT.PRINT("\N "+N*);
+		sYSTEM.OUT.PRINT(" "+N*);
+		FOR (INT I=*;I<A;I++)
+		{
+			SUM = N*+N*;
+			sYSTEM.OUT.PRINT(" " +SUM);
+			N*=N*;
+			N*=SUM;
+		}
+	}
+}
