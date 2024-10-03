@@ -1,11 +1,15 @@
 public class Slip14B {
-    public static void main(String arg[])
-    {
-        int n=2 ,power1 =3;
-        int cal(n,power1)
-        {
-            return n*cal(n,(power1-1));
+    static int power(int n, int p) {
+        if (p == 0) {
+            return 1;
+        } else {
+            return n * power(n, p - 1);
         }
-        int r =cal(n,power1);
+    }
+
+    public static void main(String arg[]) {
+        int n = Integer.parseInt(arg[0]) ;
+        int p = Integer.parseInt(arg[1])  ;
+        System.out.println("the power of given number --" + (power(n, p)));
     }
 }

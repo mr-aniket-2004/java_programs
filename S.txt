@@ -1,1 +1,3 @@
-ANIKET ANIL CHANDIWADE 1 2 2  4 
+name ={
+    "aniket": aniket, "ritanshu":ritanshu,"bhushan":bhushan,
+}
