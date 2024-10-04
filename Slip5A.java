@@ -19,6 +19,7 @@ public class Slip5A {
                     }
                     else
                     {
+                        System.out.println("Name of file---"+str);
                         System.out.println( "the location---"+file.getAbsolutePath());
                         System.out.println("the size --"+ (file.length()/1024)+"kb");
 
