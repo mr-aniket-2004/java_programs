@@ -1,3 +1,0 @@
-name ={
-    "aniket": aniket, "ritanshu":ritanshu,"bhushan":bhushan,
-}
