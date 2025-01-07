@@ -14,7 +14,7 @@ public class Slip12B {
         System.out.println("the original string ");
         for (int i = 0; i < 3; i++) {
             System.out.print("\n \t"+ar[i]);
-
+  
         }
         System.out.println("\nThe Revers String");
         for (int i = 0; i < 3; i++) {
